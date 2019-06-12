@@ -1,0 +1,88 @@
+.sliderContainer{
+  position: absolute;
+  display: flex;
+  flex: 0 0;
+  flex-direction:row;
+  justify-content: space-evenly;
+  transition: transform .5s linear;
+}
+.sliderOuter{
+  width:21em;
+  display: flex;
+  overflow: auto;
+  align-items: center;
+  height:10em;
+  position:relative;
+}
+.slides{
+  width: 6em;
+  height:5em;
+  background-color: green;
+  margin:.5em;
+}
+::-webkit-scrollbar { 
+  display: none; 
+}
+
+swiper{
+  height: 250px;
+  width: 80%;
+  margin: auto;
+}
+
+.swiper-slide{
+  img{
+      width: 100%;
+  }
+}
+
+.swiper-container {
+  width: 100%;
+  height: 100%;
+}
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  /* Center slide text vertically */
+  background-size:cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  background-color:transparent;
+  transition: all 200ms linear;
+  img{
+    width: 100%;
+    height:100%;
+    z-index:-1;
+  }
+  button{
+    position: absolute;
+    margin:auto;
+    transform: translatey(100%);
+    transition: all 150ms ease-in;
+    opacity:0;
+  }
+}
+
+.swiper-slide:hover{
+  background-color: rgba(0,0,0,.4);
+  border:5px solid rgba(0,0,0,.2);
+  button{
+    opacity:1;
+    transform:none;
+  }
+}
+:host{
+  display: block;
+  width: 100%;
+  height: 19em;
+}

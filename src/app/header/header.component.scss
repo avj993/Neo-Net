@@ -1,0 +1,140 @@
+@import "../../themes.scss";
+
+:host{
+  display: block;
+  position: relative;
+  width:100%;
+}
+
+
+.enqbtn{
+  color: white;
+  background-color: $theme;
+  margin-left: 10px;
+  padding: 1em 2em;
+  font-size:15px;
+  border-radius: 1px;
+}
+
+  .glyphicon{
+    color:$theme;
+    padding:0 .5em;
+  }
+  .enqright{
+    text-align: right;
+  }
+  .enqleft{
+      margin-top: .5em;
+      .col-6{
+        text-align: center;
+      }
+  }
+.mainheader{
+  position: relative;
+  padding: 1em 5em;
+  display: flex;
+  z-index: 1000;
+  background-color:white;
+  transition: padding .2s ease-in;
+}
+.fixed{
+  position:fixed;
+  top: 0;
+  width: 100%;
+  left:0;
+  padding: 1em 4em;
+}
+
+.imgtag{
+  width: 12em;
+  height: 3.5em;
+}
+.imgCont{
+  display: flex;
+    align-items: center;
+}
+  nav {
+    display: flex;
+    align-items:flex-start;
+    justify-content: space-between;
+  
+    a{
+      padding:.5em 1em;
+      margin: 1em;
+      font-size: 1em;
+      color:black;
+    }
+  }
+  .catCont{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    float: right;
+  }
+  a{
+    border-radius: 30px;
+    text-align: center;
+  }
+  a:hover{
+    text-decoration: none !important;
+    background-color: lightblue;
+  }
+  .anchorAct{
+    background-color: $theme !important;
+    color:white !important;
+  }
+
+
+.submenu{
+  cursor: pointer;
+  display: none;
+  span{
+    font-size: 30px;
+    position: absolute;
+    right: 20px;
+    top: 5px;
+   font-size:30px;
+  }
+  nav{
+    align-items: stretch;
+  }
+}
+.sideNav{
+  display: flex;
+  flex-direction: column;
+  position:absolute;
+  right: 20px;
+  top: 4em;
+  max-height:0em;
+  background-color: white;
+  transition: all 300ms ease-in;
+  height:0px;
+  overflow: auto;
+}
+.opener{
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  max-height: 20em;
+}
+.enqtop{
+  padding: 0 5em;
+  border-top: 5px solid $theme;
+  background-color: darkgrey;
+  justify-content: center;
+}
+
+@media only screen and (max-width:960px){
+  .bigMenu{
+    display: none;
+  }
+  .submenu{
+    display: block;
+  }
+  .enqtop{
+    padding: 0 .5em;
+  }
+  .mainheader{
+    padding: .5em 1em;
+  }
+}

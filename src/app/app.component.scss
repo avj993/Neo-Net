@@ -1,0 +1,57 @@
+footer{
+  text-align: center;
+  background-color: black;
+  color: white;
+  color:white;
+}
+
+.footrcont{
+  margin: .3em;
+  text-align: left;
+img{
+  height: 8em;
+  
+}
+.container1{
+  display: block;
+  position: relative;
+}
+.imgtag{
+  width: 12em;
+  height: 3.5em;
+}
+.imgCont{
+  display: flex;
+    align-items: center;
+}
+p{
+  margin: 2em 0;
+}}
+
+
+.fotsec{
+  padding: 1em 5em;
+  background-color: darkgrey;
+}
+
+.descrip{
+  padding:0px;
+}
+.opcontainer{
+  padding:.5em 1em;
+}
+
+@media only screen and (max-width:992px){
+  .wwa{
+    padding:0 .75em;
+  }
+  .descrip{
+    padding-top:1em;
+  }
+  .fotsec{
+    padding: 1em 0em;
+  }
+}
+
+
+

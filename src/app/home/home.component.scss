@@ -1,0 +1,91 @@
+@import "../../themes.scss";
+
+.wwa{
+  padding:0 5em;
+ 
+}
+#aboutYou{
+  justify-content: center;
+  display: flex;
+}
+.bodyContainer{
+  display: block;
+  
+}
+hr{
+  height: 4px;
+  background-color: $underscore;
+  width: 30%;
+  align-items: left;
+  float: left;
+  clear: both;
+  margin: 0px;
+}
+.readbtn{
+  background-color: $theme;
+  color: white !important;
+}
+.imgcont{
+  img{
+    width:100%;
+  }
+}
+
+.leftborder{
+  padding: 1em;
+}
+
+.bgimg{
+  background-image: url('../../assets/images/bgimg.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding:1em 5em;
+  margin: 2em 0 0 0em;
+  hr{
+    width: 9%;
+  }
+ 
+}
+.footrcont{
+  margin: .3em;
+  text-align: left;
+img{
+  height: 8em;
+  
+}
+.imgtag{
+  width: 12em;
+  height: 3.5em;
+}
+.imgCont{
+  display: flex;
+    align-items: center;
+}
+p{
+  margin: 2em 0;
+}}
+
+
+.fotsec{
+  padding: 1em 5em;
+  background-color: darkgrey;
+}
+
+.descrip{
+  padding:0px;
+}
+.opcontainer{
+  padding:.5em 1em;
+}
+
+@media only screen and (max-width:992px){
+  .wwa{
+    padding:0 .75em;
+  }
+  .descrip{
+    padding-top:1em;
+  }
+  .fotsec{
+    padding: 1em 0em;
+  }
+}

@@ -1,1 +1,11 @@
 /* You can add global styles to this file, and also import other style files */
+.no-padding{
+  padding:0px !important;
+}
+
+router-outlet ~ * {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  display: block;
+}

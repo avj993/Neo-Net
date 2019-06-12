@@ -1,0 +1,45 @@
+<div #body class="bodyContainer">
+    <slideshow [height]="'300px'" [autoPlay]="true" [showArrows]="true" [imageUrls]="imageSources"
+    [autoPlayWaitForLazyLoad]="true" showDots="true">
+  </slideshow>
+  <section  id="aboutYou" class="row wwa">
+    <div class="col-md-12 col-sm-12 col-lg-3">
+      <h1>Who We Are?</h1>
+      <hr />
+      <br />
+      <p>
+      We are a renowned wire mesh, net, grill importer and supplier based out in Kochi having a full fledged warehouse.
+      </p>
+      <a routerLink="['/about']"class="btn readbtn">Read More</a>
+    </div>
+  
+    <div class="descrip col-md-12 col-sm-12 col-lg-9 row">
+      <div class="col-md-4 col-sm-4 imgcont">
+        <img src="../assets/images/ab1.jpg"> 
+        <label>Our Mission</label>
+        <br />
+        <a>Read More -></a>
+      </div>
+      <div class="col-md-4 col-sm-4  imgcont">
+        <img src="../assets/images/ab1.jpg">
+        <label>Our Approach</label>
+        <br />
+        <a>Read More -></a>
+      </div>
+      <div class="col-md-4 col-sm-4 imgcont">
+        <img src="../assets/images/ab1.jpg">
+        <label>Our Vision</label>
+        <br />
+        <a>Read More -></a>
+      </div>
+    </div>
+  </section>
+  <section id="products" class="wwa bgimg">
+    <h1>Our Products</h1>
+    <hr />
+    <br />
+    <div class="opcontainer">
+    <app-slider delay=2000 repeat></app-slider>
+    </div>
+  </section>
+ 

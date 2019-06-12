@@ -1,0 +1,30 @@
+@import '../../themes.scss';
+hr{
+  height: 4px;
+  background-color: $underscore;
+  width: 10%;
+  align-items: left;
+  float: left;
+  clear: both;
+  margin: 0px;
+}
+.cont{
+  padding:2em 6em;
+}
+.details{
+  text-align: justify;
+}
+.imgCont{
+  padding: 1em;
+  display: block;
+  width:100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media only screen and (max-width:992px){
+.cont{
+  padding: 1em 2em;
+}
+
+}
