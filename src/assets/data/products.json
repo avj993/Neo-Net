@@ -1,0 +1,132 @@
+{
+  "Plastic Fiber Nets": {
+    "Sub": [{
+        "Name": "Hexagonal Fensing Net",
+        "imgUrl": "",
+        "specs": [{
+          "name": "color",
+          "values": "Green,Black,Special Color Requests"
+        }, {
+          "name": "width",
+          "value": "3',4',5'"
+        }, {
+          "name": "Length",
+          "value": "15m-25m"
+        }]
+      },
+      {
+        "Name": "Square Fensing Net",
+        "imgUrl": "",
+        "specs": [{
+          "name": "color",
+          "values": "Green,Black,Grey"
+        }, {
+          "name": "width",
+          "value": "1m-12m"
+        }, {
+          "name": "Length",
+          "value": "15-25m"
+        }]
+      }
+    ]
+  },
+  "Mosquito Screen": {
+    "Sub": [{
+      "Name": "Fiber Glass",
+      "imgUrl": ""
+    }, {
+      "Name": "Aluminium",
+      "imgUrl": ""
+    }, {
+      "Name": "Stainless Steel",
+      "imgUrl": ""
+    }]
+  },
+  "Expanded Metal": {
+    "specs": [{
+        "name": "width",
+        "value": "3',4'"
+      },
+      {
+        "name": "length",
+        "value": "100ft"
+      },
+      {
+        "name": "color",
+        "value": "silver"
+      },
+      {
+        "name": "Mesh Sizes",
+        "value": "1/2'',1/4'',1/8'',1/16'',1/32''"
+      }
+    ]
+  },
+  "Narrow woven fabrics(VELCRO)": {
+    "specs": [{
+        "name": "width",
+        "value": "20-25m"
+      },
+      {
+        "name": "color",
+        "value": "??"
+      }
+    ]
+  },
+  "Agro Shade Nets": {
+    "specs": [{
+        "name": "width",
+        "value": "1-5m"
+      },
+      {
+        "name": "color",
+        "value": "Green,Black,B/W Stripes"
+      },
+      {
+        "name": "coverage",
+        "value": "50%,75%,90%"
+      },
+      {
+        "name": "length",
+        "value": "50m"
+      }
+    ]
+  },
+  "Fiber Glass Plastering Mesh": {
+    "specs": [{
+        "name": "width",
+        "value": "4'',6'',1m"
+      },
+      {
+        "name": "color",
+        "value": "White"
+      },
+      {
+        "name": "Mesh Weight",
+        "value": "40-145GSM"
+      },
+      {
+        "name": "length",
+        "value": "50m"
+      }
+    ]
+  },
+  "Packaging Nets": {
+    "specs": [{
+        "name": "width",
+        "value": "200-800mm"
+      },
+      {
+        "name": "color",
+        "value": "White,Orange,Green,Blue,Red,(Special Color On Request)"
+      },
+      {
+        "name": "length",
+        "value": "1000m (Also Available in cut sizes)"
+      }
+    ]
+  },
+  "Aluminium Grills": {
+
+  },
+  "Weather Strips": {}
+}

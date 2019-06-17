@@ -11,12 +11,13 @@ export class HeaderComponent implements OnInit {
   fixeing = false;
   private sticky;
   open:Boolean = false;
+  openSub:Boolean = false;
   @ViewChild('fixer',{static:true}) headFixer;
-  navigator=[{name:'home',active:true,path:'/home'},
-  {name:'About Us',active:false,path:'/about'},
-  {name:'Products',active:false,path:'/products'},
-  {name:'Certification',active:false,path:'/certifications'},
-  {name:'Contact Us',active:false,path:'/contactUs'}
+  navigator=[{name:'home',active:true,path:'/home',isDropDown:false},
+  {name:'About Us',active:false,path:'/about',isDropDown:false},
+  {name:'Products',active:false,path:'/products',isDropDown:true},
+  {name:'Certification',active:false,path:'/certifications',isDropDown:false},
+  {name:'Contact Us',active:false,path:'/contactUs',isDropDown:false}
 ];
   ngOnInit() {
 
@@ -37,5 +38,8 @@ export class HeaderComponent implements OnInit {
   NavigateTo(path){
     this.router.navigate([path]);
     this.open = false;
+  }
+  OpenDropdoen(){
+    this.openSub = !this.openSub;
   }
 }

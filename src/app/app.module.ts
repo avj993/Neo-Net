@@ -9,6 +9,8 @@ import { HomeComponent } from './home/home.component';
 import { AboutyouComponent } from './aboutyou/aboutyou.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { DetailsComponent } from './details/details.component';
+import {HttpClientModule} from '@angular/common/http';
+import {AppService} from './app.service';
 
 
 @NgModule({
@@ -24,9 +26,10 @@ import { DetailsComponent } from './details/details.component';
     BrowserModule,
     AppRoutingModule,
     SlideshowModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [AppService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

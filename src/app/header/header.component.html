@@ -19,13 +19,32 @@
    </div>
    <div class="col-xs-8 col-md-9">
       <nav class="bigMenu" >
-           <a *ngFor="let item of navigator" [routerLink]="[item.path]" [ngClass]="{'anchorAct': item.active}">{{item.name}}</a>
+          <div class="navCont" *ngFor="let item of navigator">
+           <a class="anchorCont" [routerLink]="[item.path]" [ngClass]="{'anchorAct': item.active}">{{item.name}}<i *ngIf="item.isDropDown" class="dropsymbol"></i></a>
+           <div *ngIf="item.isDropDown" class="dropDown">
+            <a >link one</a>
+            <a>link 3</a>
+            <a>Wire Mesh</a>
+           </div>
+          </div>
+         
       </nav>
       <div  class="submenu" >
-          <span (click)="OpenMenu()">&#9776;</span>
-          <nav class="sideNav" [ngClass]="{'opener':open}">
+        <!--   
+          
               <a *ngFor="let item of navigator" (click)="NavigateTo(item.path)"[ngClass]="{'anchorAct': item.active}">{{item.name}}</a>
-          </nav>
+         -->
+         <span (click)="OpenMenu()">&#9776;</span>
+         <nav class="sideNav" [ngClass]="{'opener':open}">
+          <div class="navCont" *ngFor="let item of navigator">
+              <a class="anchorCont" [routerLink]="[item.path]" [ngClass]="{'anchorAct': item.active}">{{item.name}}<i *ngIf="item.isDropDown" class="dropsymbol" (click)="OpenDropdoen()"></i></a>
+              <div *ngIf="item.isDropDown&&openSub" class="mindropDown">
+               <a >link one</a>
+               <a>link 3</a>
+               <a>Wire Mesh</a>
+              </div>
+             </div>
+            </nav>
       </div>
      
    </div>
