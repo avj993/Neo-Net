@@ -8,6 +8,19 @@ footer{
 .footrcont{
   margin: .3em;
   text-align: left;
+  height: 100%;
+  border-right: 1px dashed grey;
+  padding-right:1em;
+  a:hover{
+    text-decoration: none;
+  }
+  a{
+    color:#2d375d;
+  }
+  li{
+    padding: .5em;
+    border-bottom: 1px solid grey;
+  }
 img{
   height: 8em;
   
@@ -42,6 +55,9 @@ p{
 }
 
 @media only screen and (max-width:992px){
+  .footrcont{
+    border:none;
+  }
   .wwa{
     padding:0 .75em;
   }

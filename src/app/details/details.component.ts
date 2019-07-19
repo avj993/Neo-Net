@@ -1,6 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild, TemplateRef } from '@angular/core';
 import {AppService} from '../app.service';
 import { ActivatedRoute } from '@angular/router';
+import { nearer } from 'q';
 @Component({
   selector: 'app-details',
   templateUrl: './details.component.html',
@@ -12,10 +13,10 @@ export class DetailsComponent implements OnInit {
   product:any='';
   selectedProduct:any={};
   msg:any;
+  @ViewChild('scroller',{static:true}) viewer;
   ngOnInit() {
       if(!this.productData){
         this.service.get('../../assets/data/products.json').subscribe((data)=>{
-          console.log(data);
           this.productData = data;
           this.getRouteparams();
         })
@@ -25,6 +26,7 @@ export class DetailsComponent implements OnInit {
   }
   getRouteparams(){
     this._route.params.subscribe(param => {
+      this.viewer.nativeElement.scrollIntoView({behavior: "smooth", block:"center" });
       this.product = param.product.split('-').join(' ');
       this.checkProcutPresent()
     })

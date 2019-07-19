@@ -1,5 +1,6 @@
 import { Component,ViewChild,HostListener } from '@angular/core';
 import {animater} from './animation';
+import {productsLs} from './constants';
 
 
 @Component({
@@ -12,9 +13,8 @@ export class AppComponent {
   @ViewChild('header',{static:true}) head;
   @ViewChild('body',{static:true}) body;
   @ViewChild('o',{static:true}) outlet;
-
-
   private sticky;
+  readonly ProductList = productsLs;
   @HostListener("window:scroll", [])
   onWindowScroll() {
     if ((window.pageYOffset >= this.sticky) && (this.head.fixeing == false)) {
@@ -35,7 +35,6 @@ export class AppComponent {
   ngOnInit(): void {
     //Called after the constructor, initializing input properties, and the first call to ngOnChanges.
     //Add 'implements OnInit' to the class.
-
   }
 
 

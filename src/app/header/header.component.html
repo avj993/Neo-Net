@@ -1,8 +1,8 @@
 <div class="container-fluid no-padding">
   <div class="row enqtop no-margin">
-    <div class="col-xs-12 col-md-6 enqleft no-padding row">
-      <div class="col-6 col-md-6"><b>Ph_NO:</b>0484-2205488</div>
-      <div class="col-6 col-md-6"><b>EMail:</b>pinnaclecochin@gmail.com</div>
+    <div class="col-xs-12 col-md-6 enqleft row">
+      <div class="col-6 col-md-6 no-padding"> <i class="fa fa-phone">&nbsp;0484-2205488</i></div>
+      <div class="col-6 col-md-6 no-padding"><i class="fa fa-envelope">&nbsp;pinnaclecochin@gmail.com</i></div>
     </div>
     <div class="enqright col-xs-12 col-md-6 row">
       <div class="col-6 catCont">
@@ -19,7 +19,7 @@
    <div class="col-xs-8 col-md-9">
       <nav class="bigMenu" >
           <div class="navCont" *ngFor="let item of navigator">
-           <a class="anchorCont" [routerLink]="[item.path]" [ngClass]="{'anchorAct': item.active}">{{item.name}}<i *ngIf="item.isDropDown" class="dropsymbol"></i></a>
+           <a class="anchorCont" [routerLink]="[item.path]" [ngClass]="{'anchorAct||!item.isDropDown': item.active}">{{item.name}}<i *ngIf="item.isDropDown" class="dropsymbol"></i></a>
            <div *ngIf="item.isDropDown" class="dropDown">
            <a *ngFor="let product of productsList" [routerLink]="['products/',product.redirecTo]">{{product.name}}</a>
            </div>

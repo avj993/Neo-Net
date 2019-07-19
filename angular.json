@@ -30,7 +30,8 @@
             "styles": [
               "src/styles.scss",
               "node_modules/bootstrap/dist/css/bootstrap.css",
-              "node_modules/swiper/dist/css/swiper.css" 
+              "node_modules/swiper/dist/css/swiper.css",
+              "./node_modules/font-awesome/css/font-awesome.min.css"  
             ],
             "scripts": ["node_modules/swiper/dist/js/swiper.js"]
           },
@@ -92,7 +93,8 @@
             "styles": [
               "src/styles.scss",
               "node_modules/bootstrap/dist/css/bootstrap.css",
-              "node_modules/swiper/dist/css/swiper.css" 
+              "node_modules/swiper/dist/css/swiper.css",
+              "./node_modules/font-awesome/css/font-awesome.min.css"  
             ],
             "scripts": ["node_modules/swiper/dist/js/swiper.js"]
           }

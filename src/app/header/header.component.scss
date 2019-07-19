@@ -24,10 +24,15 @@
     text-align: right;
   }
   .enqleft{
-      margin-top: .5em;
-      .col-6{
-        text-align: center;
-      }
+    .col-md-6{
+      display: flex;
+      align-items: center;
+    }
+    .fa{
+      font-size: 18px;
+      color:$theme;
+      font-weight: 500;
+    }
   }
 .mainheader{
   position: relative;
@@ -206,6 +211,13 @@ i.dropsymbol {
 }
 
 @media only screen and (max-width:960px){
+  .enqleft{
+    padding:1em;
+    .col-6 i:nth-child(2){
+      justify-content: center;
+    }
+  
+  }
   .bigMenu{
     display: none;
   }

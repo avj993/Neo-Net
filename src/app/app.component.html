@@ -30,7 +30,9 @@
                   <div class="footrcont">
                      <h5>Our Products</h5>
                      <hr/>
-                     <p>Product Details</p>
+                    <ul class="no-padding" style="list-style-type: none;">
+                      <li *ngFor="let item of ProductList"><a [routerLink]="['products/',item.redirecTo]">{{item.name}}</a></li>
+                    </ul>
                   </div>
               </div>
               <div class="col-sm-6 col-md-4">
