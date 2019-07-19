@@ -2,7 +2,7 @@
   <div class="row enqtop no-margin">
     <div class="col-xs-12 col-md-6 enqleft row">
       <div class="col-6 col-md-6 no-padding"> <i class="fa fa-phone">&nbsp;0484-2205488</i></div>
-      <div class="col-6 col-md-6 no-padding"><i class="fa fa-envelope">&nbsp;pinnaclecochin@gmail.com</i></div>
+      <div class="col-6 col-md-6"><i class="fa fa-envelope">&nbsp;pinnaclecochin@gmail.com</i></div>
     </div>
     <div class="enqright col-xs-12 col-md-6 row">
       <div class="col-6 catCont">
@@ -34,9 +34,9 @@
          <span (click)="OpenMenu()">&#9776;</span>
          <nav class="sideNav" [ngClass]="{'opener':open}">
           <div class="navCont" *ngFor="let item of navigator">
-              <a class="anchorCont" [routerLink]="[item.path]" [ngClass]="{'anchorAct': item.active}">{{item.name}}<i *ngIf="item.isDropDown" class="dropsymbol" (click)="OpenDropdoen()"></i></a>
+              <a class="anchorCont" (click)="NavigateTo(item.path)" [ngClass]="{'anchorAct': item.active}">{{item.name}}<i *ngIf="item.isDropDown" class="dropsymbol" (click)="OpenDropdoen($event)"></i></a>
               <div *ngIf="item.isDropDown&&openSub" class="mindropDown">
-                <a *ngFor="let product of productsList" [routerLink]="['products/'+product.redirecTo]">{{product.name}}</a>
+                <a *ngFor="let product of productsList"  (click)="NavigateTo('products/'+product.redirecTo)">{{product.name}}</a>
               </div>
              </div>
             </nav>

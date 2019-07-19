@@ -30,10 +30,11 @@ export class HeaderComponent implements OnInit {
     });
   }
   NavigateTo(path) {
-    this.router.navigate([path]);
     this.open = false;
+    this.router.navigate([path]);
   }
-  OpenDropdoen() {
+  OpenDropdoen(evt) {
     this.openSub = !this.openSub;
+    evt.stopPropagation();
   }
 }
