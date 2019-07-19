@@ -7,7 +7,16 @@
         </div>
     </div>
           <div *ngIf="selectedProduct.specs" class="specCont row no-margin" >
-              <div *ngFor="let pro of selectedProduct.specs" class="col-12">{{pro.name}}:{{pro.value}}</div>
+            <h4>Product Specifications</h4>
+              <div *ngFor="let pro of selectedProduct.specs" class="col-12 row details">
+                <div style="text-align: right;font-size: 1.2em;" class="col-6">
+                    <b>{{pro.name | titlecase}}</b>
+                </div>
+                <div style="text-align: left" class="col-6">
+                    :{{pro.value}}
+                  </div>
+              </div>
+
           </div>
       </div>
 </section>

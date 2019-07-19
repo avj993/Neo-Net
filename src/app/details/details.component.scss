@@ -19,10 +19,13 @@ align-items: center;}
     padding: 2em;
   }
 }
+.details{
+  padding: .5em .75em;
+}
 .scrollContainer{
   width: 100%;
   overflow : auto;
-  margin: 3em 5em;
+  margin: 1em 5em 0em;
 }
 h3{
   padding: 0 3.5em;
@@ -33,3 +36,16 @@ h3{
   align-items: center;
   min-height:40vh;
 }
+.specCont{
+  padding: 2% 30%;
+h4{
+  width: 100%;
+  text-align: center;
+}}
+  @media only screen and (max-width:960px){
+    .specCont{
+      padding:2%;}
+      h3{
+        padding: 0px 0.5em;
+      }
+  }
