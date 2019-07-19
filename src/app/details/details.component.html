@@ -1,3 +1,19 @@
-<p>
-  details works!
-</p>
+<h3>{{product}}</h3>
+<section  *ngIf="selectedProduct; else noProduct" class="main">
+  <div class="container">
+    <div class="scrollContainer">
+        <div class="imgCont">
+            <img *ngFor="let item of selectedProduct.imgUrls" [src]="item" [alt]="product">
+        </div>
+    </div>
+          <div *ngIf="selectedProduct.specs" class="specCont row no-margin" >
+              <div *ngFor="let pro of selectedProduct.specs" class="col-12">{{pro.name}}:{{pro.value}}</div>
+          </div>
+      </div>
+</section>
+<ng-template #noProduct>
+<div class="noproduct">
+ Product Named {{product}} is not present
+</div>
+</ng-template>
+

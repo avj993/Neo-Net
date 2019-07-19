@@ -1,5 +1,6 @@
 {
-  "Plastic Fiber Nets": {
+  "Plastic Fencing Nets": {
+    "imgUrls":["assets/startup/pfn1.jpg","assets/startup/pfn2.jpg","assets/startup/r.jpg"],
     "Sub": [{
         "Name": "Hexagonal Fensing Net",
         "imgUrl": "",
@@ -31,6 +32,7 @@
     ]
   },
   "Mosquito Screen": {
+    "imgUrls":["assets/startup/mosnet.jpg","assets/startup/mosnet1.jpg","assets/startup/mosnet2.jpeg","assets/startup/mosnet3.jpg"],
     "Sub": [{
       "Name": "Fiber Glass",
       "imgUrl": ""
@@ -43,6 +45,8 @@
     }]
   },
   "Expanded Metal": {
+    "imgUrls":["assets/startup/expmetal1.jpg"],
+
     "specs": [{
         "name": "width",
         "value": "3',4'"
@@ -62,6 +66,8 @@
     ]
   },
   "Narrow woven fabrics(VELCRO)": {
+    "imgUrls":["assets/startup/velcro.jpg","assets/startup/velcro2.jpg"],
+
     "specs": [{
         "name": "width",
         "value": "20-25m"
@@ -73,6 +79,8 @@
     ]
   },
   "Agro Shade Nets": {
+    "imgUrls":["assets/startup/agro-shade-net.jpg"],
+
     "specs": [{
         "name": "width",
         "value": "1-5m"
@@ -83,7 +91,7 @@
       },
       {
         "name": "coverage",
-        "value": "50%,75%,90%"
+        "value": "50% \n 75% \n 90%"
       },
       {
         "name": "length",
@@ -92,6 +100,8 @@
     ]
   },
   "Fiber Glass Plastering Mesh": {
+    "imgUrls":["assets/startup/fgp1.jpg","assets/startup/fgp2.jpg"],
+
     "specs": [{
         "name": "width",
         "value": "4'',6'',1m"
@@ -111,6 +121,7 @@
     ]
   },
   "Packaging Nets": {
+    "imgUrls":["assets/startup/packaging net.png","assets/startup/packaging net 3.jpg"],
     "specs": [{
         "name": "width",
         "value": "200-800mm"
@@ -126,7 +137,9 @@
     ]
   },
   "Aluminium Grills": {
-
+    "imgUrls":["assets/startup/alum grill.jpg","assets/startup/alum grill2.jpg"]
   },
-  "Weather Strips": {}
+  "Weather Strips": {
+    "imgUrl":""
+  }
 }

@@ -194,12 +194,15 @@ i.dropsymbol {
   height: 10em;
   overflow: auto;
   opacity:1;
+  width: auto;
 }
 .dropDown:hover{
   display: flex;
   height: 10em;
   overflow: auto;
   opacity:1; 
+  width: auto;
+
 }
 
 @media only screen and (max-width:960px){

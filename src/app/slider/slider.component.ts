@@ -6,6 +6,7 @@ import {
   Input
 } from "@angular/core";
 import {coerceBooleanProperty} from '@angular/cdk/coercion';
+import { Router } from '@angular/router';
 declare var Swiper;
 
 @Component({
@@ -16,7 +17,7 @@ declare var Swiper;
 
 export class SliderComponent implements OnInit {
 
-  constructor() {}
+  constructor(private _router:Router) {}
   private Interval:any;
   @Input('delay') delayer:any =2500;
   @Input('repeat')
@@ -27,16 +28,7 @@ export class SliderComponent implements OnInit {
     let res = coerceBooleanProperty(name);
     if(res) this.loopit();
   }
-  ImageUrls:any[] =[
-    '../../assets/images/product.png',
-    '../../assets/images/product.png',
-    '../../assets/images/product.png',
-    '../../assets/images/product.png',
-    '../../assets/images/product.png',
-    '../../assets/images/product.png',
-    '../../assets/images/product.png',
-    '../../assets/images/product.png'
-  ]
+  @Input('Data') Data:any[];
   mySwiper: any;
   @ViewChild("next",{static:true}) nextBtn: any;
   @HostListener("window:resize", ["$event"])
@@ -110,5 +102,9 @@ export class SliderComponent implements OnInit {
     this.Interval = setInterval(() => {
      this.nextBtn.nativeElement.click();
     }, this.delayer);
+  }
+  navigateTo(product){
+    const val = product.split(' ').join('-');
+    this._router.navigate([`products/${val}`]);
   }
 }

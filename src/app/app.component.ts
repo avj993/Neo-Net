@@ -11,6 +11,9 @@ import {animater} from './animation';
 export class AppComponent {
   @ViewChild('header',{static:true}) head;
   @ViewChild('body',{static:true}) body;
+  @ViewChild('o',{static:true}) outlet;
+
+
   private sticky;
   @HostListener("window:scroll", [])
   onWindowScroll() {

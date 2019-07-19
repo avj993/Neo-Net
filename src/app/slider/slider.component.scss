@@ -1,3 +1,5 @@
+
+@import "../../themes.scss";
 .sliderContainer{
   position: absolute;
   display: flex;
@@ -30,11 +32,7 @@ swiper{
   margin: auto;
 }
 
-.swiper-slide{
-  img{
-      width: 100%;
-  }
-}
+
 
 .swiper-container {
   width: 100%;
@@ -59,6 +57,14 @@ swiper{
   align-items: center;
   background-color:transparent;
   transition: all 200ms linear;
+  position:relative;
+  h4{
+    position: absolute;
+    bottom: 0;
+    background-color: $theme;
+    color:white;
+    width:100%;
+  }
   img{
     width: 100%;
     height:100%;

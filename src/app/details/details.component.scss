@@ -1,0 +1,35 @@
+.main{
+  min-height: 25em;
+  display: block;
+}
+.container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+align-items: center;}
+
+.imgCont{
+  display: flex;
+  flex-direction: row;
+  height: 30em;
+  align-items: center;
+  justify-content: center;
+  img{
+    height: 100%;
+    padding: 2em;
+  }
+}
+.scrollContainer{
+  width: 100%;
+  overflow : auto;
+  margin: 3em 5em;
+}
+h3{
+  padding: 0 3.5em;
+}
+.noproduct{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height:40vh;
+}

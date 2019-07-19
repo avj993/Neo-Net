@@ -1,9 +1,10 @@
 <div class="swiper-container">
     <!-- Additional required wrapper -->
     <div class="swiper-wrapper">
-        <div *ngFor="let item of ImageUrls" class="swiper-slide">
-            <img [src]="item" />
-            <button class="btn btn-primary">Details</button>
+        <div *ngFor="let item of Data" class="swiper-slide">
+            <img [src]="item.imgurl" />
+            <h4>{{item.name}}</h4>
+            <button class="btn btn-primary" (click)="navigateTo(item.name)">Details</button>
         </div>
       </div>
     <!-- If we need pagination

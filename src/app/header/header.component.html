@@ -1,8 +1,8 @@
 <div class="container-fluid no-padding">
-  <div class="row enqtop">
+  <div class="row enqtop no-margin">
     <div class="col-xs-12 col-md-6 enqleft no-padding row">
-      <div class="col-6 col-md-4"><span class="glyphicon glyphicon-earphone">--no here--</span></div>
-      <div class="col-6 col-md-4"><span class="glyphicon glyphicon-envelope">--mail here--</span></div>
+      <div class="col-6 col-md-6"><b>Ph_NO:</b>0484-2205488</div>
+      <div class="col-6 col-md-6"><b>EMail:</b>pinnaclecochin@gmail.com</div>
     </div>
     <div class="enqright col-xs-12 col-md-6 row">
       <div class="col-6 catCont">
@@ -21,9 +21,7 @@
           <div class="navCont" *ngFor="let item of navigator">
            <a class="anchorCont" [routerLink]="[item.path]" [ngClass]="{'anchorAct': item.active}">{{item.name}}<i *ngIf="item.isDropDown" class="dropsymbol"></i></a>
            <div *ngIf="item.isDropDown" class="dropDown">
-            <a >link one</a>
-            <a>link 3</a>
-            <a>Wire Mesh</a>
+           <a *ngFor="let product of productsList" [routerLink]="['products/',product.redirecTo]">{{product.name}}</a>
            </div>
           </div>
          
@@ -38,9 +36,7 @@
           <div class="navCont" *ngFor="let item of navigator">
               <a class="anchorCont" [routerLink]="[item.path]" [ngClass]="{'anchorAct': item.active}">{{item.name}}<i *ngIf="item.isDropDown" class="dropsymbol" (click)="OpenDropdoen()"></i></a>
               <div *ngIf="item.isDropDown&&openSub" class="mindropDown">
-               <a >link one</a>
-               <a>link 3</a>
-               <a>Wire Mesh</a>
+                <a *ngFor="let product of productsList" [routerLink]="['products/'+product.redirecTo]">{{product.name}}</a>
               </div>
              </div>
             </nav>
