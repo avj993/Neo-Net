@@ -1,0 +1,71 @@
+[debug] [2019-09-03T16:26:44.858Z] ----------------------------------------------------------------------
+[debug] [2019-09-03T16:26:44.860Z] Command:       /Users/avj/.nvm/versions/node/v10.14.2/bin/node /Users/avj/.nvm/versions/node/v10.14.2/bin/firebase deploy
+[debug] [2019-09-03T16:26:44.860Z] CLI Version:   7.0.2
+[debug] [2019-09-03T16:26:44.860Z] Platform:      darwin
+[debug] [2019-09-03T16:26:44.860Z] Node Version:  v10.14.2
+[debug] [2019-09-03T16:26:44.861Z] Time:          Tue Sep 03 2019 21:56:44 GMT+0530 (India Standard Time)
+[debug] [2019-09-03T16:26:44.861Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2019-09-03T16:26:44.873Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2019-09-03T16:26:44.873Z] > authorizing via signed-in user
+[debug] [2019-09-03T16:26:44.873Z] [iam] checking project neo-net-firebase for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2019-09-03T16:26:44.875Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2019-09-03T16:26:44.875Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2019-09-03T16:26:45.147Z] <<< HTTP RESPONSE 200
+[debug] [2019-09-03T16:26:45.162Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/neo-net-firebase:testIamPermissions  
+
+[debug] [2019-09-03T16:26:46.934Z] <<< HTTP RESPONSE 200
+[debug] [2019-09-03T16:26:46.936Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/neo-net-firebase  
+ 
+[debug] [2019-09-03T16:26:47.530Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Deploying to 'neo-net-firebase'...
+[info] 
+[info] i  deploying hosting
+[debug] [2019-09-03T16:26:47.534Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/neo-net-firebase/versions  
+
+[debug] [2019-09-03T16:26:50.537Z] <<< HTTP RESPONSE 200
+[info] i  hosting[neo-net-firebase]: beginning deploy...
+[info] i  hosting[neo-net-firebase]: found 56 files in dist/NeoNet
+[debug] [2019-09-03T16:26:50.552Z] [hosting] hash cache [ZGlzdC9OZW9OZXQ] load error: lines is not defined
+[debug] [2019-09-03T16:26:51.011Z] [hosting] hash cache [ZGlzdC9OZW9OZXQ] stored for 56 files
+[debug] [2019-09-03T16:26:51.012Z] [hosting][hash queue][FINAL]
+[debug] [2019-09-03T16:26:51.012Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/neo-net-firebase/versions/cfa8d07dff19687f:populateFiles  
+ <request body omitted>
+[debug] [2019-09-03T16:26:53.975Z] <<< HTTP RESPONSE 200
+[debug] [2019-09-03T16:26:53.979Z] [hosting][populate queue][FINAL]
+[debug] [2019-09-03T16:26:53.979Z] [hosting] uploads queued: 3
+[debug] [2019-09-03T16:26:58.272Z] [hosting][upload queue][FINAL]
+[info] ✔  hosting[neo-net-firebase]: file upload complete
+[debug] [2019-09-03T16:26:58.272Z] [hosting] deploy completed after 7734ms
+[debug] [2019-09-03T16:26:58.273Z] [
+  {
+    "config": {
+      "public": "dist/NeoNet",
+      "ignore": [
+        "firebase.json",
+        "**/.*",
+        "**/node_modules/**"
+      ],
+      "rewrites": [
+        {
+          "source": "**",
+          "destination": "/index.html"
+        }
+      ],
+      "site": "neo-net-firebase"
+    },
+    "site": "neo-net-firebase",
+    "version": "sites/neo-net-firebase/versions/cfa8d07dff19687f"
+  }
+]
+[info] i  hosting[neo-net-firebase]: finalizing version...
+[debug] [2019-09-03T16:26:58.273Z] >>> HTTP REQUEST PATCH https://firebasehosting.googleapis.com/v1beta1/sites/neo-net-firebase/versions/cfa8d07dff19687f?updateMask=status  
+
+[debug] [2019-09-03T16:27:00.319Z] <<< HTTP RESPONSE 200
+[debug] [2019-09-03T16:27:00.320Z] [hosting] finalized version for neo-net-firebase:
+[info] ✔  hosting[neo-net-firebase]: version finalized
+[info] i  hosting[neo-net-firebase]: releasing new version...
+[debug] [2019-09-03T16:27:00.320Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/neo-net-firebase/releases?version_name=sites/neo-net-firebase/versions/cfa8d07dff19687f  
+

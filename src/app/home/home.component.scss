@@ -1,7 +1,7 @@
 @import "../../themes.scss";
 
 .wwa{
-  padding:0 5em;
+  padding:0 6em;
  
 }
 #aboutYou{
@@ -21,6 +21,10 @@ hr{
   float: left;
   clear: both;
   margin: 0px;
+}
+slideshow{
+  display: block;
+  height: 300px;
 }
 .readbtn{
   background-color: $theme;
@@ -42,7 +46,7 @@ hr{
   background-image: url('../../assets/images/bgimg.jpg');
   background-repeat: no-repeat;
   background-size: cover;
-  padding:1em 5em;
+  padding:1em 7.75em;
   margin: 2em 0 0 0em;
   hr{
     width: 9%;
@@ -83,7 +87,10 @@ p{
 
 @media only screen and (max-width:992px){
   .wwa{
-    padding:0 .75em;
+    padding: .5em 1em;
+  }
+  .bgimg{
+    padding:0 2em;
   }
   .descrip{
     padding-top:1em;
@@ -92,6 +99,12 @@ p{
     padding: 1em 0em;
   }
   .imgcont{
-    padding: .5em 4em;
+    padding: .5em 8em;
+  }
+  .opcontainer{
+    padding:.5em 4em;
+  }
+  slideshow{
+    height:200px;
   }
 }
