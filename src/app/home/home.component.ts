@@ -7,7 +7,7 @@ import {ProImages} from '../constants';
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent implements OnInit {
-  imageSources=["../assets/images/2000px--Insert_image_here-.svg.png","../assets/images/logo.png","../assets/images/2000px--Insert_image_here-.svg.png"]
+  imageSources=["../assets/images/cover1.png","../assets/images/cover2.png","../assets/images/cover3.png","../assets/images/cover4.png"]
   Data = ProImages;
   ngOnInit(){
   }

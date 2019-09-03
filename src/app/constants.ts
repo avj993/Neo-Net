@@ -39,8 +39,8 @@ export const productsLs=[
 export const nav=[
   { name: "Home", active: true, path: "/home", isDropDown: false },
   { name: "About Us", active: false, path: "/about", isDropDown: false },
-  { name: "Products", active: false, path: `/products/${productsLs[0].redirecTo}`, isDropDown: true },
-  { name: "Contact Us", active: false, path: "/contactUs", isDropDown: false }
+  { name: "Contact Us", active: false, path: "/contactUs", isDropDown: false },
+  { name: "Products", active: false, path: `/products/${productsLs[0].redirecTo}`, isDropDown: true }
 ];
 
 export const ProImages = [{
